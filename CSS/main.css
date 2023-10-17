@@ -33,7 +33,6 @@ header {
 header img {
     height: 100%;
     margin-top: 0.5em;
-    margin-bottom: 1.5em;
 }
 
 main {
@@ -164,6 +163,14 @@ footer {
 
 
 /* DESKTOP */
+@media (min-width: 500px) {
+    
+    header img {
+        margin-bottom: 1.5em;
+    }
+
+}
+
 @media (min-width: 900px) {
     main, .header-section {
       max-width: 1050px;
@@ -200,13 +207,3 @@ footer {
 
     
 }  
-/* .profile-textbox {
-    height: 43.2vh;
-    width: 50%;
-    max-width: 50%;
-    background-color: white;
-    border-radius: 3px;
-    padding: 1em;
-    margin: auto auto auto 0;
-    box-shadow: 1px 1px 3px #54414a;
-} */

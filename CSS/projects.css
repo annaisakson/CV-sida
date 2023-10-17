@@ -36,7 +36,6 @@ header {
 header img {
     height: 100%;
     margin-top: 0.5em;
-    margin-bottom: 1.5em;
 }
 
 main {
@@ -135,6 +134,14 @@ footer {
 
 
 /* DESKTOP */
+@media (min-width: 500px) {
+    
+    header img {
+        margin-bottom: 1.5em;
+    }
+
+}
+
 @media (min-width: 900px) {
     main, .header-section {
       max-width: 1050px;
