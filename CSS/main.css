@@ -76,7 +76,7 @@ main img {
 }
 
 .profile-textbox {
-    height: 43.2vh;
+    min-height: 43.2vh;
     width: 80%;
     background-color: white;
     border-radius: 3px;
