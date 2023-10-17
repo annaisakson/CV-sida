@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #BCA5AF;
+  --second-main-color: #CB9FB3; 
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+a:visited {
+    color: white;
+}
+
+/*HEADER*/
+header {
+    height: 20vh;
+    background-color: var(--main-bg-color);   
+    box-shadow: 1px 1px 3px #54414a;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header img {
+    height: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+main {
+    padding: 2em 1em 1em 1em;
+}
+
+.nav-links > a {
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0.5em;
+}
+
+.nav-links > a:hover {
+    font-size: 1.3rem;
+    border-bottom: 1.5px solid white;
+}
+
+.nav-links > a.active {
+    font-size: 1.8rem;
+    border-bottom: 1.5px solid white;
+}
+
+/* Contact me */
+
+h2, h3 {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #54414a;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+
+.contact-container a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #54414a;
+    padding: 2em 1em;
+}
+
+
+
+/* FOOTER */
+footer {
+    height: 8vh;
+    background-color: var(--main-bg-color);
+    box-shadow: 1px 1px 3px #54414a;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1em;
+    margin-top: auto;
+}
+
+.footer-copy p {
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+/* DESKTOP */
+@media (min-width: 900px) {
+    main, .header-section {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    header {
+        height: 9vh;
+    }
+
+    .header-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}  
