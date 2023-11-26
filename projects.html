@@ -31,14 +31,16 @@
       <!-- Här visas alla projekt som kort -->
       <h1>Mina projekt</h1>
       <section class="project-cards">
-        <div class="card project-card1">
-          <h3>Projekt 1</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <a href="#">Mer Info</a>
+        <div class="project-card1">
+          <a href="#" class="card-link"></a>
+          <img src="proj1.jpg" alt="Projekt 1, Gissa talet" />
+          <div class="proj-container">
+            <h3>Spel: Gissa Talet</h3>
+          </div>
         </div>
         <div class="card project-card2">
           <h3>Projekt 2</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Kommer snart!</p>
           <a href="#">Mer Info</a>
         </div>
         <div class="card project-card3">
@@ -58,6 +60,25 @@
         </div>
       </section>
     </main>
+    <!-- MODAL -->
+    <!-- Original skrivet av "https://codepen.io/kevinpowell/pen/gxZMvR" -->
+    <!-- Modifierad av mig -->
+    <div class="modal">
+      <div class="inner-modal">
+        <button class="close">x</button>
+        <h2>Spel: Gissa Talet!</h2>
+        <p>
+          Ett Javascript projekt! Spelet går ut på att du ska gissa på ett tal
+          mellan 1-100. Du får 5 chanser på dig och för varje gissning får du en
+          hint om talet är högre eller lägre än din gissning. Klicka
+          <a href="https://annaisakson.github.io/gissa-talet/" target="_blank"
+            >här</a
+          >
+          för att komma till spelet!
+        </p>
+      </div>
+    </div>
+    <!-- Här fortsätter min kod -->
     <!-- Footer med länkar till mina medier -->
     <footer>
       <div class="footer-copy">
@@ -96,5 +117,6 @@
         ></a>
       </div>
     </footer>
+    <script src="js/projects.js"></script>
   </body>
 </html>

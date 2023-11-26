@@ -116,19 +116,50 @@ p {
     font-size: 1.3rem;
 }
 .card {
-    background-color: var(--main-bg-color);
-    height: 18rem;
+    background-color: white;
+    height: 280px;
     width: 240px;
     margin: 10px 0px;
-    padding: 1em;
+    padding: 0 1em;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #54414a;
+}
+
+.project-card1 {
+    margin: 10px 0px;
+    width: 240px;
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
     border-radius: 3px;
     box-shadow: 1px 1px 3px #54414a;
+    position: relative;
 }
 
-.card a {
+.card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.project-card1:hover{
+    opacity: 0.5;
+    transition: .5s ease;
+}
+
+.proj-container {
+  position: absolute;
+  top: 80%; 
+  left: 10%; 
+}
+
+.proj-container > h3 {
+    color: white;
+}
+
+/* .card a {
     align-self: center;
     color: white;
     text-decoration: none;
@@ -140,9 +171,9 @@ p {
 
 .card a:hover {
     background-color: white;
-    color: #54414a;
-    
-}
+    color: #54414a;   
+} */
+
 
 /* FOOTER */
 footer {
@@ -161,6 +192,54 @@ footer {
     font-size: 1rem;
 }
 
+/* MODAL */
+/* Original skrivet av "https://codepen.io/kevinpowell/pen/gxZMvR" */
+/* Modifierad av mig */
+
+.modal {
+    position: absolute;
+    background: rgba(0, 0, 0, .7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  
+  .inner-modal {
+    padding: 1em;
+    background: white;
+    border-radius: 0.5em;
+    position: relative;
+  }
+
+  .close {
+    position: absolute;
+    content: 'x';
+    font-size: 1.25em;
+    top: 1em;
+    right: 1em;
+    padding: .25em .5em;
+    line-height: 1;
+    background: linear-gradient(90deg, #54414a, #72626a);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    transition: all ease-in-out 200ms;
+  }
+  
+  .is-open {
+    display: flex;
+  }
+
+/* Här fortsätter min kod */
+
+  .modal a {
+    color: #54414a; 
+    text-decoration: underline;
+  }
 
 /* DESKTOP */
 @media (min-width: 500px) {
@@ -203,5 +282,10 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .inner-modal {
+        padding: 6em 10em;
+        width: 50vw;
     }
 }  
