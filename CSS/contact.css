@@ -61,7 +61,7 @@ main {
 
 /* Contact me */
 
-h2, h3 {
+h1, h2, h3 {
     font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -76,9 +76,10 @@ p {
 
 .contact-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 3em;
     padding: 1em;
 }
@@ -87,6 +88,16 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     color: #54414a;
     padding: 2em 1em;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+#inputMail {
+    margin-bottom: 1em;
 }
 
 /* FOOTER */

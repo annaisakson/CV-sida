@@ -1,0 +1,25 @@
+{
+    "workExperience": [
+    {
+        "year": "2022- nu",
+        "company": "Butikmedarbetare, Lidl Umeå",
+        "description": "Allmänt butiksarbete, plocka varor, sitta i kassan, baka bröd till butikens bake-off."
+    },
+    {
+        "year": 2021,
+        "company": "Grundutbildning med värnplikt mot befattningen Stridsbåtsförare",
+        "description": " Militär grundutbildning på AMF1 Berga Stockholm delvis genomförd. Tyvärr fick jag avbryta min befattningsutbildning p.g.a en knäskada."
+    },
+    {
+        "year": 2020,
+        "company": "Personlig assistent Norrbottens Assistans",
+        "description": "Personlig assistent till en 20-årig kille. Hjälp med både vardagliga och medicinska behov."
+    },
+    {
+        "year": "2016 - 2019",
+        "company": "Butikmedarbetare, Willys Boden",
+        "description": "I stort sätt allt möjligt som behövs i butik! Sitta i kassan, packa upp varor, ansvara för att stänga butiken på kvällar, svara på telefonsamtal till butiken, hjälpa kunder och ta emot returer m.m."
+    }
+
+    ]
+}
