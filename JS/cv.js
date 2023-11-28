@@ -14,9 +14,9 @@ const willysYear = document.getElementById("willys-year");
 const willysCompany = document.getElementById("willys-company");
 const willysDescription = document.getElementById("willys-description");
 
-// hämta json och lista ut arbetsplatser på sidan
+// funktion för att hämta json och lista ut arbetsplatser på sidan
 async function getCv() {
-    const response = await fetch("cv.json");
+    const response = await fetch("../json/cv.json");
     if (response.ok) {
         const json = await response.json();
 
@@ -40,4 +40,5 @@ async function getCv() {
         console.log(response.status);
     }
 }
+// kör funktionen
 getCv();

@@ -3,80 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CSS/cv.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&family=Lilita+One&family=Staatliches&display=swap"
       rel="stylesheet"
     />
-    <meta name="description" content="Mer info om mig och mitt CV" />
-    <title>Mitt CV - Anna-Sara Isakson</title>
+    <meta name="description" content="Här hittar du alla mina projekt!" />
+    <title>Mina projekt - Anna-Sara Isakson</title>
   </head>
   <body>
     <!-- Header med nav länkar -->
     <header>
-      <section class="header-section">
-        <img src="./IMG/logga1.png" alt="Anna-Sara Isakson" />
+      <div class="header-section">
+        <img src="../img/logga1.png" alt="Anna-Sara Isakson" />
         <nav class="nav-links">
-          <a href="index.html">Hem</a>
-          <a href="projects.html">Projekt</a>
-          <a class="active" href="cv.html">CV</a>
-          <a href="contact.html">Kontakt</a>
+          <a href="../index.html">Hem</a>
+          <a class="active" href="./projects.html">Projekt</a>
+          <a href="./cv.html">CV</a>
+          <a href="./contact.html">Kontakt</a>
         </nav>
-      </section>
+      </div>
     </header>
 
-    <!-- En beskrivning av mig och info -->
     <main>
-      <h1>Mitt CV</h1>
-      <article class="cv-container">
-        <section class="info-box">
-          <div class="info-list">
-            <ul>
-              <li>Namn: Anna-Sara Isakson</li>
-              <li>Stad: Umeå</li>
-              <li>Mobiltelefonnummer:</li>
-              <li>Mejladress:</li>
-              <li>Född: 12 januari 1997</li>
-            </ul>
+      <!-- Här visas alla projekt som kort -->
+      <h1>Mina projekt</h1>
+      <section class="project-cards">
+        <div class="project-card1">
+          <a href="#" class="card-link"></a>
+          <img src="../img/proj1.jpg" alt="Projekt 1, Gissa talet" />
+          <div class="proj-container">
+            <h3>Spel: Gissa Talet</h3>
           </div>
-          <br />
-          <div class="about-me">
-            <h3>Om mig</h3>
-            <p>
-              Jag är en kreativ tjej på 26 år som just nu pluggar till fullstack
-              Javascript-utvecklare på Chas Academy. Jag har även erfarenhet av
-              grafisk formgivning och har jobbat mycket med Photoshop och
-              Illustrator.
-            </p>
-          </div>
-        </section>
-
-        <!-- Tidigare yrkeserfarenheter laddas in från cv.json -->
-        <div class="cv-text">
-          <h3>Yrkeserfarenheter</h3>
-          <p id="lidl-year" style="font-weight: bold"></p>
-          <p id="lidl-company" style="font-weight: bold"></p>
-          <p id="lidl-description"></p>
-          <br />
-          <p id="fm-year" style="font-weight: bold"></p>
-          <p id="fm-company" style="font-weight: bold"></p>
-          <p id="fm-description"></p>
-          <br />
-          <p id="pa-year" style="font-weight: bold"></p>
-          <p id="pa-company" style="font-weight: bold"></p>
-          <p id="pa-description"></p>
-          <br />
-          <p id="willys-year" style="font-weight: bold"></p>
-          <p id="willys-company" style="font-weight: bold"></p>
-          <p id="willys-description"></p>
-          <br />
         </div>
-      </article>
+        <div class="card project-card2">
+          <h3>Projekt 2</h3>
+          <p>Kommer snart!</p>
+        </div>
+        <div class="card project-card3">
+          <h3>Projekt 3</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card project-card4">
+          <h3>Projekt 4</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card project-card5">
+          <h3>Projekt 5</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </section>
     </main>
-
-    <!-- footer med länkar till mina medier -->
+    <!-- MODAL -->
+    <!-- Original skrivet av "https://codepen.io/kevinpowell/pen/gxZMvR" -->
+    <!-- Modifierad av mig -->
+    <div class="modal">
+      <div class="inner-modal">
+        <button class="close">x</button>
+        <h2>Spel: Gissa Talet!</h2>
+        <p>
+          Ett Javascript projekt! Spelet går ut på att du ska gissa på ett tal
+          mellan 1-100. Du får 5 chanser på dig och för varje gissning får du en
+          hint om talet är högre eller lägre än din gissning. Klicka
+          <a href="https://annaisakson.github.io/gissa-talet/" target="_blank"
+            >här</a
+          >
+          för att komma till spelet!
+          <br /><br />
+          <a href="https://github.com/annaisakson/gissa-talet" target="_blank"
+            >Länk till Github.</a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- Här fortsätter min kod -->
+    <!-- Footer med länkar till mina medier -->
     <footer>
       <div class="footer-copy">
         <p>&copy; Anna-Sara Isakson</p>
@@ -114,6 +117,6 @@
         ></a>
       </div>
     </footer>
-    <script src="./JS/cv.js"></script>
+    <script src="../js/projects.js"></script>
   </body>
 </html>
