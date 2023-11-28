@@ -17,6 +17,7 @@ function send (event){
         alert("Fyll i alla fält, tack!");
         event.preventDefault();    
     } else {
+        // Alert att meddelandet är skickat
          alert("Tack för ditt meddelande!");
     }};
 
