@@ -1,150 +1,158 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-  --main-bg-color: #BCA5AF;
-  --second-main-color: #CB9FB3; 
+  --main-bg-color: #bca5af;
+  --second-main-color: #cb9fb3;
 }
 
 body {
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f3f5;
 }
 
 a:visited {
-    color: white;
+  color: white;
 }
 
 /*HEADER*/
 header {
-    min-height: 85px;
-    background-color: var(--main-bg-color);   
-    box-shadow: 1px 1px 3px #54414a;
+  min-height: 85px;
+  background-color: var(--main-bg-color);
+  box-shadow: 1px 1px 3px #54414a;
 }
 
 .header-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 header img {
-    height: 100%;
-    margin-top: 0.5em;
+  height: 100%;
+  margin-top: 0.5em;
 }
 
 main {
-    padding: 2em 1em 1em 1em;
+  padding: 2em 1em 1em 1em;
 }
 
 .nav-links > a {
-    color: white;
-    font-family: 'Libre Franklin', sans-serif;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin: 0.5em;
+  color: #54414a;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0.2em;
 }
 
 .nav-links > a:hover {
-    font-size: 1.3rem;
-    border-bottom: 1.5px solid white;
+  font-size: 1.3rem;
+  color: #69575f;
+  font-weight: bolder;
+  border-bottom: 1.5px solid #69575f;
 }
 
 .nav-links > a.active {
-    font-size: 1.8rem;
-    border-bottom: 1.5px solid white;
+  font-size: 1.8rem;
+  border-bottom: 1.5px solid #54414a;
 }
 
 /* PROJECT CARDS */
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .project-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .card h3 {
-    color: #54414a;
-    font-size: 1.3rem;
+  color: #54414a;
+  font-size: 1.3rem;
 }
 
-h1, h2, h3 {
-    font-family: 'Libre Franklin', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Libre Franklin", sans-serif;
+  color: #54414a;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
 }
 
 .card {
-    background-color: white;
-    height: 277px;
-    width: 240px;
-    margin: 10px 0px;
-    padding: 0 1em;
-    border-radius: 3px;
-    box-shadow: 1px 1px 3px #54414a;
+  background-color: white;
+  height: 277px;
+  width: 240px;
+  margin: 10px 0px;
+  padding: 0 1em;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #54414a;
 }
 
 .project-card1 {
-    margin: 10px 0px;
-    width: 240px;
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-around;
-    border-radius: 3px;
-    box-shadow: 1px 1px 3px #54414a;
-    position: relative;
+  margin: 10px 0px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #54414a;
+  position: relative;
 }
 
 .card-link {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
-.project-card1:hover{
-    opacity: 0.5;
-    transition: .5s ease;
+.project-card1:hover {
+  opacity: 0.5;
+  transition: 0.5s ease;
 }
 
 .proj-container {
   position: absolute;
-  top: 80%; 
-  left: 10%; 
+  top: 80%;
+  left: 10%;
 }
 
 .proj-container > h3 {
-    color: white;
+  color: white;
 }
 
 /* FOOTER */
 footer {
-    height: 8vh;
-    background-color: var(--main-bg-color);
-    box-shadow: 1px 1px 3px #54414a;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 1em;
+  height: 8vh;
+  background-color: var(--main-bg-color);
+  box-shadow: 1px 1px 3px #54414a;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1em;
 }
 
 .footer-copy p {
-    color: white;
-    margin: 0;
-    font-size: 1rem;
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 /* MODAL */
@@ -152,80 +160,78 @@ footer {
 /* Modifierad av mig */
 
 .modal {
-    position: absolute;
-    background: rgba(0, 0, 0, .7);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    display: none;
-  }
-  
-  .inner-modal {
-    padding: 1em;
-    background: white;
-    border-radius: 0.5em;
-    position: relative;
-  }
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 
-  .close {
-    position: absolute;
-    content: 'x';
-    font-size: 1.25em;
-    top: 1em;
-    right: 1em;
-    padding: .25em .5em;
-    line-height: 1;
-    background: linear-gradient(90deg, #54414a, #72626a);
-    border-radius: 50%;
-    cursor: pointer;
-    border: 0;
-    transition: all ease-in-out 200ms;
-  }
-  
-  .is-open {
-    display: flex;
-  }
+.inner-modal {
+  padding: 1em;
+  background: white;
+  border-radius: 0.5em;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  content: "x";
+  font-size: 1.25em;
+  top: 1em;
+  right: 1em;
+  padding: 0.25em 0.5em;
+  line-height: 1;
+  background: linear-gradient(90deg, #54414a, #72626a);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  transition: all ease-in-out 200ms;
+}
+
+.is-open {
+  display: flex;
+}
 
 /* Här fortsätter min kod */
 
 .modal a {
-    color: #54414a; 
-    text-decoration: underline;
-  }
+  color: #54414a;
+  text-decoration: underline;
+}
 
 /* DESKTOP */
 @media (min-width: 500px) {
-    
-    header img {
-        margin-bottom: 1.5em;
-    }
-
+  header img {
+    margin-bottom: 1.5em;
+  }
 }
 
 @media (min-width: 900px) {
-    main, .header-section {
-      max-width: 1050px;
-      margin: 0 auto;
-    }
+  main,
+  .header-section {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
 
-    header {
-        height: 9vh;
-    }
+  header {
+    height: 16vh;
+  }
 
-    .header-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .header-section {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-    .inner-modal {
-        padding: 6em 10em;
-        width: 50vw;
-    }
-
-    
-}  
+  .inner-modal {
+    padding: 6em 10em;
+    width: 50vw;
+  }
+}

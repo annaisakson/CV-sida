@@ -1,157 +1,161 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-  --main-bg-color: #BCA5AF;
-  --second-main-color: #CB9FB3; 
+  --main-bg-color: #bca5af;
+  --second-main-color: #cb9fb3;
 }
 
 body {
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f3f5;
 }
 
 a:visited {
-    color: white;
+  color: white;
 }
 
 /*HEADER*/
 header {
-    min-height: 85px;
-    background-color: var(--main-bg-color);   
-    box-shadow: 1px 1px 3px #54414a;
+  min-height: 85px;
+  background-color: var(--main-bg-color);
+  box-shadow: 1px 1px 3px #54414a;
 }
 
 .header-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 header img {
-    height: 100%;
-    margin-top: 0.5em;
+  height: 100%;
+  margin-top: 0.5em;
 }
 
 main {
-    padding: 2em 1em 1em 1em;
+  padding: 2em 1em 1em 1em;
 }
 
 .nav-links > a {
-    color: white;
-    font-family: 'Libre Franklin', sans-serif;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin: 0.5em;
+  color: #54414a;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0.2em;
 }
 
 .nav-links > a:hover {
-    font-size: 1.3rem;
-    border-bottom: 1.5px solid white;
+  font-size: 1.3rem;
+  color: #69575f;
+  font-weight: bolder;
+  border-bottom: 1.5px solid #69575f;
 }
 
 .nav-links > a.active {
-    font-size: 1.8rem;
-    border-bottom: 1.5px solid white;
+  font-size: 1.8rem;
+  border-bottom: 1.5px solid #54414a;
 }
 
 /* CV */
 
-h1, h2, h3 {
-    font-family: 'Libre Franklin', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Libre Franklin", sans-serif;
+  color: #54414a;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 .cv-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: white;
-    border-radius: 3px;
-    box-shadow: 1px 1px 3px #54414a;
-    margin-bottom: 3em;
-    padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #54414a;
+  margin-bottom: 3em;
+  padding: 1em;
 }
-
 
 /* FOOTER */
 footer {
-    height: 8vh;
-    background-color: var(--main-bg-color);
-    box-shadow: 1px 1px 3px #54414a;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 1em;
+  height: 8vh;
+  background-color: var(--main-bg-color);
+  box-shadow: 1px 1px 3px #54414a;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1em;
 }
 
 .footer-copy p {
-    color: white;
-    margin: 0;
-    font-size: 1rem;
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Libre Franklin", sans-serif;
 }
-
 
 /* DESKTOP */
 @media (min-width: 500px) {
-    
-    header img {
-        margin-bottom: 1.5em;
-    }
-
+  header img {
+    margin-bottom: 1.5em;
+  }
 }
 
 @media (min-width: 900px) {
-    main, .header-section {
-      max-width: 1050px;
-      margin: 0 auto;
-    }
+  main,
+  .header-section {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
 
-    header {
-        height: 9vh;
-    }
+  header {
+    height: 16vh;
+  }
 
-    .header-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .header-section {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-    .info-box {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-    }
+  .info-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
 
-    .info-list {
-        max-width: 50%;
-        margin-top: 2.5em;
-        margin-left: auto;
-        margin-right: 4em;
-    }
+  .info-list {
+    max-width: 50%;
+    margin-top: 2.5em;
+    margin-left: auto;
+    margin-right: 4em;
+  }
 
-    .about-me {
-        max-width: 50%;
-    }
-
-    
-}  
+  .about-me {
+    max-width: 50%;
+  }
+}
