@@ -3,8 +3,9 @@
 }
 
 :root {
-  --main-bg-color: #bca5af;
-  --second-main-color: #cb9fb3;
+  --main-bg-color: #caa3b6;
+  /* --second-main-color: #f6e5a5; */
+  --text-main-color: #54414a;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: #f8f3f5;
+  background-color: #e7c3d2;
 }
 
 a:visited {
@@ -43,7 +44,7 @@ main {
 }
 
 .nav-links > a {
-  color: #54414a;
+  color: var(--text-main-color);
   font-family: "Libre Franklin", sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -69,12 +70,12 @@ h1,
 h2,
 h3 {
   font-family: "Libre Franklin", sans-serif;
-  color: #54414a;
+  color: var(--text-main-color);
 }
 
 h2 {
   font-size: 2rem;
-  color: #54414a;
+  color: var(--text-main-color);
 }
 
 p {
@@ -94,7 +95,7 @@ p {
 
 .contact-container a {
   font-family: Arial, Helvetica, sans-serif;
-  color: #54414a;
+  color: var(--text-main-color);
   padding: 2em 1em;
 }
 
@@ -110,7 +111,7 @@ p {
 
 /* FOOTER */
 footer {
-  height: 8vh;
+  height: 6vh;
   background-color: var(--main-bg-color);
   box-shadow: 1px 1px 3px #54414a;
   display: flex;
@@ -121,7 +122,7 @@ footer {
 }
 
 .footer-copy p {
-  color: white;
+  color: #f6e5a5;
   margin: 0;
   font-size: 1rem;
   font-family: "Libre Franklin", sans-serif;
@@ -142,7 +143,7 @@ footer {
   }
 
   header {
-    height: 16vh;
+    height: 12vh;
   }
 
   .header-section {

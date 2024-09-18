@@ -3,8 +3,9 @@
 }
 
 :root {
-  --main-bg-color: #bca5af;
-  --second-main-color: #cb9fb3;
+  --main-bg-color: #caa3b6;
+  /* --second-main-color: #f6e5a5; */
+  --text-main-color: #54414a;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   /* background-image: linear-gradient(#f1eaed, #eae7e8); */
-  background-color: #f8f3f5;
+  background-color: #e7c3d2;
 }
 
 a:visited {
@@ -45,7 +46,7 @@ main {
 }
 
 .nav-links > a {
-  color: #54414a;
+  color: var(--text-main-color);
   font-family: "Libre Franklin", sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -72,7 +73,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   /* background-color: var(--main-bg-color); */
-  background-image: linear-gradient(var(--main-bg-color), #eae7e8);
+  background-image: linear-gradient(var(--main-bg-color), #e0b5c7);
   border-radius: 3px;
   box-shadow: 1px 1px 3px #54414a;
   margin-bottom: 3em;
@@ -97,52 +98,57 @@ h3 {
 }
 h1 {
   font-size: 2.5rem;
-  color: #54414a;
+  color: var(--text-main-color);
 }
 
 h2 {
   font-size: 2rem;
-  color: #54414a;
+  color: var(--text-main-color);
 }
 
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
-  color: #54414a;
+  color: var(--text-main-color);
 }
 
 /* PROJECTS */
 
-.project-cards {
+.project-cards-container {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
-.card h3 {
-  color: #54414a;
+.project-cards h3 {
+  color: var(--text-main-color);
   font-size: 1.3rem;
-}
-.card {
-  background-color: white;
-  height: 277px;
-  width: 240px;
-  margin: 10px 0px;
-  padding: 0 1em;
-  border-radius: 3px;
-  box-shadow: 1px 1px 3px #54414a;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-.project-card1 {
-  margin: 10px 0px;
+/* .card {
+  background-color: white;
+  height: 270px;
   width: 240px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #54414a;
+} */
+
+.project-cards {
+  margin: 10px 0px;
+  max-width: 240px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-radius: 3px;
   box-shadow: 1px 1px 3px #54414a;
   position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.project-cards img {
+  border-radius: 3px; /* Apply rounded corners to the image */
 }
 
 .card-link {
@@ -153,7 +159,7 @@ p {
   width: 100%;
 }
 
-.project-card1:hover {
+.project-cards:hover {
   opacity: 0.5;
   transition: 0.5s ease;
 }
@@ -170,7 +176,7 @@ p {
 
 /* FOOTER */
 footer {
-  height: 8vh;
+  height: 6vh;
   background-color: var(--main-bg-color);
   box-shadow: 1px 1px 3px #54414a;
   display: flex;
@@ -180,7 +186,7 @@ footer {
 }
 
 .footer-copy p {
-  color: white;
+  color: #f6e5a5;
   margin: 0;
   font-size: 1rem;
   font-family: "Libre Franklin", sans-serif;
@@ -217,11 +223,15 @@ footer {
   right: 1em;
   padding: 0.25em 0.5em;
   line-height: 1;
-  background: linear-gradient(90deg, #54414a, #72626a);
+  background-color: #54414a;
   border-radius: 50%;
   cursor: pointer;
   border: 0;
   transition: all ease-in-out 200ms;
+}
+
+.close:hover {
+  background-color: #72626a;
 }
 
 .is-open {
@@ -231,7 +241,7 @@ footer {
 /* Här fortsätter min kod */
 
 .modal a {
-  color: #54414a;
+  color: var(--text-main-color);
   text-decoration: underline;
 }
 
@@ -272,7 +282,7 @@ footer {
   }
 
   header {
-    height: 16vh;
+    height: 12vh;
   }
 
   .header-section {
