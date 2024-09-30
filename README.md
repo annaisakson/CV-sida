@@ -5,4 +5,7 @@ Här kan du hitta mina projekt, mitt CV och mer information om mig.
 
 Länk till den publicerade sidan: https://annaisakson.github.io/CV-sida/
 
+#OBS 
+## kolla gärna in min nya portfolio som kommer fyllas på framöver: https://relaxed-tiramisu-077ba4.netlify.app/
+
 # // Anna-Sara Isakson
