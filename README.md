@@ -1,6 +1,6 @@
 # OBS 
-## kolla gärna in min nya portfolio som kommer fyllas på framöver: https://relaxed-tiramisu-077ba4.netlify.app/
-
+## kolla gärna in min nya portfolio som kommer fyllas på framöver: https://github.com/annaisakson/portfolio 
+## https://relaxed-tiramisu-077ba4.netlify.app/
 
 # Välkommen till min sida med CV och portfolio!
 
